@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <title>Recreated News Zindaa</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bg-dark h-16 md:h-40 w-full px-0 py-2 z-10">
+            <nav class="relative top-0 flex flex-wrap items-start justify-end">
+                <!-- Navigation Items -->
+                <div class="hidden md:flex md:items-start md:w-auto md:text-xs" id="nav-content">
+                    <ul class="uppercase md:flex md:flex-1">
+                        <li>
+                            <a href="#" class="inline-block py-1 px-2 cursor-pointer text-white hover:bg-blue-700 transition-colors duration-700 ease-out">
+                                <i class="fas fa-user"></i>
+                                нийтлэлчид
+                            </a>
+                            <span class="text-white">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block py-1 px-2 cursor-pointer text-white hover:bg-blue-700 transition-colors duration-700 ease-out">
+                                <i class="fas fa-tv"></i>
+                                тв8
+                            </a>
+                            <span class="text-white">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block py-1 px-2 cursor-pointer text-white hover:bg-blue-700 transition-colors duration-700 ease-out">
+                                өглөөний сонин
+                            </a>
+                            <span class="text-white">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block py-1 px-2 cursor-pointer text-white hover:bg-blue-700 transition-colors duration-700 ease-out">
+                                <i class="fas fa-microphone"></i>
+                                аудио зохиол
+                            </a>
+                            <span class="text-white">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block py-1 px-2 cursor-pointer text-white hover:bg-blue-700 transition-colors duration-700 ease-out">сэтгүүл
+                            </a>
+                            <span class="text-white">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block py-1 px-2 cursor-pointer text-white">
+                                <div class="border border-red-700 bg-red-700 px-1">
+                                    mobile tv
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Main navigation right icons -->
+                <div class="hidden md:flex items-center justify-between py-1">
+                    <div class="ml-3 cursor-pointer">
+                        <img class="h-4" src="img/icons/facebook.png" alt="">
+                    </div>
+                    <div class="mx-1 cursor-pointer">
+                        <img class="h-4" src="img/icons/twitter.png" alt="">
+                    </div>
+                    <div class="mx-1 cursor-pointer">
+                        <img class="h-4" src="img/icons/youtube.png" alt="">
+                    </div>
+                    <div class="mx-1 mr-12 cursor-pointer">
+                        <img class="h-4" src="img/icons/rss.png" alt="">
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="flex flex-nowrap">
+                <div class="pl-1 cursor-pointer  md:pl-16">
+                    <img class="h-12 md:h-20" src="img/logos/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="relative top-0 flex flex-wrap items-end justify-center">
+                <div class="flex flex-wrap justify-center">
+                    <div class="hidden md:flex md:items-end md:w-auto md:text-xs md:py-6">
+                        <ul class="uppercase md:flex md:flex-1 border-t">
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-0.5 text-white border border-blue-700 bg-blue-600">эхлэл</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">улс төр</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">эдийн засаг</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">нийгэм</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">уул уурхай</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">хууль</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">дэлхий</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">спорт</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">урлаг</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">тойм</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">gobi challange</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">өдрийн хөтөч</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">life style</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">орон нутаг</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block px-2 pb-1 text-white hover:bg-blue-600 transition-colors duration-100">зурхай</a>
+                            </li>
+                            <li>
+                                <div class="px-4 mt-0.5">
+                                    <form class="flex">
+                                    <input class="rounded-sm" placeholder="Хайх..."/>
+                                    <i class="fas fa-search"></i>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- News section -->
+        <section class="w-full">
+            <div class="pl-4 pr-4 md:pl-14 md:pr-14 pt-2">
+                <a href="#">
+                    <div class="pb-6">
+                        <img src="img/tdb.png" alt="">
+                    </div>
+                </a>
+                <div class="md:flex flex-row w-full">
+                    <!-- First column -->
+                    <div class="mb-6 md:w-4/12">
+                        <div class="border border-gray-400 h-7 bg-gray-400">
+                            <ul class="flex">
+                                <li class="inline-block  py-0.5 cursor-pointer text-white border border-dark bg-dark md:pl-9 md:pr-10">
+                                    <a class="" href="#">
+                                        <div class="h-5">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="inline-block  py-0.5 md:pl-9 md:pr-10 cursor-pointer text-white hover:bg-dark transition-colors duration-700 ease-out">
+                                    <a class="" href="#">
+                                        <div class="h-5">
+                                            <i class="fas fa-signal"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="inline-block  py-0.5 md:pl-10 md:pr-10 cursor-pointer text-white hover:bg-dark transition-colors duration-700 ease-out">
+                                    <a class="" href="#">
+                                        <div class="h-5">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="border-r-1 border-gray-400">
+                            <!-- №-1 -->
+                            <div>
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2 hover:opacity-75" src="img/column-1/1.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                Хатуу хөл хорионы үед аж ахуйн нэгжүүдийн хэрэгжүүлэх ЭРХ, ҮҮРЭГ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-2 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2 hover:opacity-75" src="img/column-1/2.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                УОК: Сар шинийн барилдааныг ЗОХИОН БАЙГУУЛАХГҮЙ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-3 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2" src="img/column-1/3.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                Машины QR код олгохгүй, зөвшөөрөгдсөн газрын ажилчид үнэмлэхээрээ зорч..
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-4 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20" src="img/column-1/4.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                С.Амарсайхан: Хөл хорионы хугацаанд хүнсний хомсдол үүсэхгүй, нөөц хан...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Banner -->
+                            <div class="mt-2 border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="mr-2 mb-2">
+                                        <img class="mt-2" src="img/hutuch_zindaa.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-5 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 pb-2" src="img/column-1/5.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                УОК: Өдөрт 42.000 иргэнээс шинжилгээ авна.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-6 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2" src="img/column-1/6.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                Хөл хорионы 12 хоногт ГЭРЭЭС ГАРАХ, АХУЙН АРХИДАЛТЫГ хориглоно.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-7 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2" src="img/column-1/7.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                Нийслэлд анх удаа ӨРХ БҮРЭЭС шинжилгээ авах боллоо. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-8 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2" src="img/column-1/8.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                ШУУРХАЙ: Нийслэлд 12 хоног ХАТУУ ХӨЛ ХОРИО тогтоохоор шийдвэрлэлээ.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-9 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2" src="img/column-1/9.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                С.Амарсайхан: Бизнес эрхлэгчдийн үйл ажиллагааг хэвийн үргэлжлүүлэх бо...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- №-10 -->
+                            <div class="border-dotted border-t-1 border-gray-400">
+                                <a href="#">
+                                    <div class="flex flex-row md:items-start w-full pt-2 border-b border-gray-400">
+                                        <div class="w-2/5">
+                                            <img class="h-20 mb-2" src="img/column-1/10.jpg" alt="">
+                                        </div>
+                                        <div class="w-4/5 ml-3 mr-2">
+                                            <div class="text-xs font-medium text-black">
+                                                ТАНИЛЦ: Хотын дарга Д.Сумъяабазарын 100 хоног
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second column -->
+                    <div class="flex flex-col md:w-9/12 ml-2 pr-2">
+                        <div class="flex flex-row mb-2 md:items-start w-full">
+                            <div class="relative">
+                                <a href="https://news.zindaa.mn/3l6j">
+                                    <div class="group">
+                                        <div class="">
+                                            <img class="h-82 w-full" src="img/column-2/2_1.jpg" class="" alt="">
+                                        </div>
+                                        <div class="">
+                                            <div class="absolute top-3 pl-3">
+                                                <div class="border-dark bg-dark w-20 h-6">
+                                                    <a href="#" class="text-white text-xs pb-2 pl-2">ГОЛ СЭДЭВ</a>
+                                                </div>
+                                            </div>
+                                            <div class="absolute top-24 pl-3 text-2xl">
+                                                <a href="#">
+                                                    <div class="uppercase text-white w-2/5 leading-tight group-hover:text-yellow-400">
+                                                        <h1>зүүнбаян-төмөр замтай холбоотой хоёр дахь хүний амь эрсэдлээ</h1>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Row-2 -->
+                        <div class="flex flex-row mb-2 w-full">
+                            <div class="w-1/2">
+                                <a href="#">
+                                    <div class="">
+                                        <img src="img/column-2/2_2.jpg" alt="">
+                                        <div class="relative">
+                                            <div class="absolute bottom-44 pl-2">
+                                                <div class="border-dark bg-dark w-14 h-5">
+                                                    <a href="#" class="text-white text-2xs pl-2">УЛС ТӨР</a>
+                                                </div>
+                                            </div>
+                                            <div class="absolute bottom-0 pl-2 text-base bg-black text-white opacity-80">
+                                                <a href="#">
+                                                    <p class="pb-1 pt-1">Ерөнхийлөгч Х.Баттулга зарлиг гаргаж, төрийн дээд цол хүртээ...</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="w-1/2 ml-2">
+                                <a href="#">
+                                    <div class="">
+                                        <img class="h-52" src="img/column-2/2_3.jpg" alt="">
+                                        <div class="relative">
+                                            <div class="absolute bottom-44 pl-2">
+                                                <div class="border-dark bg-dark w-14 h-5">
+                                                    <a href="#" class="text-white text-2xs pl-2">НИЙГЭМ</a>
+                                                </div>
+                                            </div>
+                                            <div class="absolute bottom-0 pl-2 text-base bg-black text-white opacity-80">
+                                                <a href="">
+                                                    <p class="pb-1 pt-1">Э.Эрдэнэбаатар:Цагаан сараар золгосон иргэнийг 500 мянган т...</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Row-3 -->
+                        <div class="flex flex-row mb-2 w-full">
+                            <div class="w-1/2">
+                                <a href="#">
+                                    <img src="img/column-2/2_4.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-44 pl-2">
+                                            <div class="border-dark bg-dark w-20 h-5">
+                                                <a href="#" class="text-white text-2xs pb-6 pl-2">ЭДИЙН ЗАСАГ</a>
+                                            </div>
+                                        </div>
+                                        <div class="absolute bottom-0 pl-2 text-base bg-black text-white opacity-80">
+                                            <a href="#">
+                                                <p class="pb-1 pt-1">Кредит картаараа онлайнаар худалдан авалт хийгээд үниийн дүнг...</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="w-1/2 ml-2">
+                                <a href="#">
+                                    <img src="img/column-2/2_5.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-44 pl-2">
+                                            <div class="border-dark bg-dark w-14 h-5">
+                                                <a href="#" class="text-white text-2xs pb-6 pl-2">НИЙГЭМ</a>
+                                            </div>
+                                        </div>
+                                        <div class="absolute bottom-0 pl-2 text-base bg-black text-white opacity-80">
+                                            <a href="#">
+                                                <p class="pb-1 pt-1">Нийслэлийн Эрүүл мэндийн газрын Б.Бямбадорж томилогд...</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Халуун сэдэв -->
+                        <div class="text-2xl leading-tight">
+                            Халуун сэдэв <span>________________________________________________</span>
+                        </div>
+                        <div class="md:flex flex-row w-full">
+                            <div class="flex flex-col md:w-1/2">
+                                <!-- 1 -->
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2 pt-3">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img src="img/column-2/2_6.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5">
+                                            <div class="text-xs text-gray-800">
+                                                Ерөнхийлөгч Х.Баттулга Сар шинийн мэгдчилгээ дэвшүүллээ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img src="img/column-2/2_7.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5 mx-0 px-0">
+                                            <div class="text-xs text-gray-800">
+                                                ХӨТӨЛБӨР: Цагаан сарын өдрүүдэд ТЕЛЕВИЗЭЭР ЮУ ҮЗЭХ ВЭ?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img class="h-19 w-full" src="img/column-2/2_8.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5">
+                                            <div class="text-xs text-gray-800">
+                                                Александр Медведь 200 кг америк бөхийг ялсан түүх
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img src="img/column-2/2_9.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5 mx-0 px-0">
+                                            <div class="text-xs text-gray-800">
+                                                Амаржих газруудаас нийт 56 эх, нярайг гэрт нь тээвэрлэн хүргэж өглөө
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="flex flex-col md:w-1/2">
+                                <!-- 2 -->
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2 pt-3">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img src="img/column-2/2_10.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5 mx-0 px-0">
+                                            <div class="text-xs text-gray-800">
+                                                Хоёрдугаар сарын 23 гэхэд нийслэлийн бүх өрхөөс ШИНЖИЛГЭЭ авч дуусгана
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img class="h-19" src="img/column-2/2_11.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5 mx-0 px-0">
+                                            <div class="text-xs text-gray-800">
+                                                Монгол хүүхдүүд ОУ-ын цахим бүжгийн уралдаанаас АЛТАН МЕДАЛЬ ХҮРТЛЭЭ
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img src="img/column-2/2_12.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5 mx-0 px-0">
+                                            <div class="text-xs text-gray-800">
+                                                Нийслэлийн хэмжээнд 600 гаруй албан хаагч үүрэг гүйцэтгэж байна
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="flex flex-row w-full md:items-start pr-2">
+                                        <div class="md:w-1/2 mb-2">
+                                            <img class="h-22" src="img/column-2/2_13.jpg" alt="">
+                                        </div>
+                                        <div class="ml-2 md:w-4/5 mx-0 px-0">
+                                            <div class="text-xs text-gray-800">
+                                                Өнөөдөр зургаан дүүргийн 67 хорооны иргэдээс PCR шинжилгээ авна 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third column -->
+                    <div class="flex flex-col md:w-3/12">
+                        <div class="text-red-500 text-lg">
+                            MOBILE TV <span class="font-extrabold text-black">________________</span>
+                        </div>
+                        <!-- Row-1 -->
+                        <div>
+                            <a href="#">
+                                <div class="md:w-full border bt-1">
+                                    <img src="img/column-3/3_1.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-20 pl-44">
+                                            <div class="text-white text-3xl">
+                                                <i class="far fa-play-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm pl-1">
+                                        АРХИДАЛТ амиа хорлолтын шалтгаан болж байна.
+                                    </div>
+                                    <div class="text-xs pl-11 mb-1 mt-1">
+                                        <span class="text-gray-700">эрүүл мэнд</span>
+                                        <span class="text-2xs">|</span> 
+                                        <span class="text-red-600">9 минутын өмнө</span>  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Row-2 -->
+                        <div class="pt-1">
+                            <a href="#">
+                                <div class="md:w-full border bt-1">
+                                    <img class="h-32 w-full" src="img/column-3/3_2.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-22 pl-44">
+                                            <div class="text-white text-3xl">
+                                                <i class="far fa-play-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm pl-1 pr-0.5">
+                                        Буриад найруулагч Төрийн дээд шагналаар шагнууллаа.
+                                    </div>
+                                    <div class="text-xs pl-7 mb-1 mt-0.5">
+                                        <span class="text-gray-700">Cinema room</span>
+                                        <span class="text-2xs">|</span> 
+                                        <span class="text-gray-700">30 минутын өмнө</span>  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Row-3 -->
+                        <div class="pt-1">
+                            <a href="#">
+                                <div class="md:w-full border bt-1">
+                                    <img class="h-28 w-full" src="img/column-3/3_3.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-18 pl-44">
+                                            <div class="text-white text-3xl">
+                                                <i class="far fa-play-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm pl-1 pr-0.5">
+                                        УИХ-ын дарга Г.Занданшатар МЭНДЧИЛГЭЭ дэвшүүлэв
+                                    </div>
+                                    <div class="text-xs pl-14 mb-1 mt-0.5">
+                                        <span class="text-gray-700">Парламент</span>
+                                        <span class="text-2xs">|</span> 
+                                        <span class="text-gray-700">5 цагийн өмнө</span>  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Row-4 -->
+                        <div class="pt-1">
+                            <a href="#">
+                                <div class="md:w-full border bt-1">
+                                    <img class="h-30 w-full" src="img/column-3/3_4.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-20 pl-44">
+                                            <div class="text-white text-3xl">
+                                                <i class="far fa-play-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm pl-1 pr-0.5">
+                                        Л.Оюун-Эрдэнэ: Эх орон минь АЗИЙН ХҮЛЭГ УЛС болон хөгжих болтугай
+                                    </div>
+                                    <div class="text-xs pl-10 mb-1 mt-0.5">
+                                        <span class="text-gray-700">Засгийн газар</span>
+                                        <span class="text-2xs">|</span> 
+                                        <span class="text-gray-700">6 цагийн өмнө</span>  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Row-5 -->
+                        <div class="pt-1">
+                            <a href="#">
+                                <div class="md:w-full border bt-1">
+                                    <img class="h-30 w-full" src="img/column-3/3_5.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-20 pl-44">
+                                            <div class="text-white text-3xl">
+                                                <i class="far fa-play-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm pl-1 pr-0.5">
+                                        ЭМЯ: Өнгөрсөн 24 цагт 33 хүнээс коронавирус илэрлээ
+                                    </div>
+                                    <div class="text-xs pl-20 mb-1 mt-0.5">
+                                        <span class="text-gray-700">Ковид-19</span>
+                                        <span class="text-2xs">|</span> 
+                                        <span class="text-gray-700">2021-02-11</span>  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Row-6 -->
+                        <div class="pt-1">
+                            <a href="#">
+                                <div class="md:w-full border bt-1">
+                                    <img class="h-30 w-full" src="img/column-3/3_6.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-20 pl-44">
+                                            <div class="text-white text-3xl">
+                                                <i class="far fa-play-circle"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm pl-1 pr-0.5">
+                                        Сар шинийн идээ хийгээд битүүлэх ёсон
+                                    </div>
+                                    <div class="text-xs pl-20 mb-1 mt-0.5">
+                                        <span class="text-gray-700">Боловсрол</span>
+                                        <span class="text-2xs">|</span> 
+                                        <span class="text-gray-700">2021-02-11</span>  
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner -->
+        <a href="#">
+            <div class="pl-14 pr-14 pb-2">
+                <img src="img/sm_banner.jpg" alt="">
+            </div>
+        </a>
+
+        <!-- Bair suuri -->
+        <section class="pt-2 pl-14 pr-14">
+            <div class="text-2xl leading-tight">
+                БАЙР СУУРЬ <span>_____________________________________________________________________________________________________</span>
+            </div>
+            <div class="flex flex-row pt-2">
+                <!-- 1 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div>
+                            <img class="h-40 object-cover w-full" src="img/b_s/1.jpg" alt="">
+                            <div class="bg-dark text-white text-lg pl-2 pr-1 pb-8 w-full">
+                                Ерөнхийлөгч Х.Баттулга Сар шинийн мэндчилгээ дэвшүүллээ
+                            </div>
+                            <div class="bg-dark text-white text-xs pl-58 pb-1">
+                                Улс төр
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 2 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div class="pl-2">
+                            <img class="h-40 object-cover w-full" src="img/b_s/2.jpg" alt="">
+                            <div class="bg-dark text-white text-lg pl-2 pr-1 pb-1 w-full">
+                                Д.Ухаанзаяа: Хулгана жилээс сургамж авч, буянд шамдах хэрэгтэй
+                            </div>
+                            <div class="bg-dark text-white text-xs pl-58 pb-1">
+                                Нийгэм
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 3 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div class="pl-2">
+                            <img class="h-40 object-cover w-full" src="img/b_s/3.jpg" alt="">
+                            <div class="bg-dark text-white text-lg pl-2 pr-1 pb-1 w-full">
+                                Д.Сайханзаяа: Үхэр жилд өндөр дээд суудалтан болон өвгөдөд хатуу ширүү...
+                            </div>
+                            <div class="bg-dark text-white text-xs pl-58 pb-1">
+                                Нийгэм
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 4 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div class="pl-2">
+                            <img class="h-40 object-cover w-full" src="img/b_s/4.jpg" alt="">
+                            <div class="bg-dark text-white text-lg pl-2 pr-1 pb-1 w-full">
+                                Л.Оюун-Эрдэнэ: Эх орон минь АЗИЙН ХҮЛЭГ УЛС болон хөгжих болтугай
+                            </div>
+                            <div class="bg-dark text-white text-xs pl-58 pb-1">
+                                Улс төр
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast -->
+        <section class="pt-5 pl-14 pr-14">
+            <div class="flex flex-row">
+                <div class="text-2xl w-5/6">
+                    PODCAST <span>______________________________________  ДЭЛХИЙ  ____________________________________</span>
+                    <div class="flex flex-row pt-2">
+                        <!-- 1 -->
+                        <div class="w-1/2">
+                            <a href="#">
+                                <div class="">
+                                    <img class="h-56 object-cover w-full" src="img/podcast/1.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-0 pl-3 text-sm bg-black text-white opacity-90">
+                                            <a href="#">
+                                                <p class="pb-2 pt-2 font-main">ПОДКАСТ <span>|</span> Б.ЭНХЖАРГАЛ <span>|</span> TOMYO EDTECH ТАНЫ ҮСРЭНГҮЙ ХӨГЖИХ БОЛОМЖ</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white border border-gray-300">
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-4 hover:opacity-70">
+                                            ПОДКАСТ<span>|</span> MOMPRENUERZ <span>|</span> Бизнес эрхлэлт Ч.Золзаяа
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-5 pr-1 border-b border-gray-400 pb-2 hover:opacity-70">
+                                                Нарнаас том А ПОДКАСТ<span>|</span> Ч.Өнөрбаяр <span>|</span> Төгс төгөлдөр рүү...
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-3 pr-1 border-b pb-2 border-gray-400 hover:opacity-70">
+                                                Нарнаас том А ПОДКАСТ<span>|</span> Б.Батзаяа <span>|</span> Тусгаарлалтын өрөөнөөс...
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-3 pr-1 pb-2 hover:opacity-70">
+                                                "Нарнаас том А" ПОДКАСТ<span>|</span> Choijoo <span>|</span> САЯ САЯ ЕРТӨНЦ ДАХЬ...
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- 2 -->
+                        <div class="w-1/2">
+                            <a href="#">
+                                <div class="pl-2">
+                                    <img class="h-56 object-cover w-full" src="img/podcast/2.jpg" alt="">
+                                    <div class="relative">
+                                        <div class="absolute bottom-0 pl-3 text-sm bg-black text-white opacity-90">
+                                            <a href="#">
+                                                <p class="pb-2 pt-2 uppercase font-main">COVID-19:анхны халдварын талаарх мэдээгээ хятад улс ДЭМБ-д өгсөнгүй</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white border">
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-4 hover:opacity-70">
+                                                Дэлхийн хамгийн нөлөөтэй улсуудыг тодрууллаа
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-5 pr-1 border-b pb-2 border-gray-400 hover:opacity-70">
+                                                Буриадын хамгийн үзэсгэлэнт 5 супер модель
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-3 pr-1 border-b pb-2 border-gray-400 hover:opacity-70">
+                                                Бред Питтийн охин аавынхаа нэрнээс татгалзлаа
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="text-base font-main opacity-50 pl-4 pt-3 pr-1 pb-2 hover:opacity-70">
+                                                Туркменистаны Ерөнхийлөгч хүүгээ Шадар сайдаар томиллоо
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pl-2">
+                    <img class="h-100" src="img/podcast/morning_banner.gif" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Life style -->
+        <section class="pt-5 pl-14 pr-14 pb-2">
+            <div class="text-2xl">
+                LIFE STYLE <span>_______________________________________________________________________________________________________</span>
+            </div>
+            <div class="flex flex-row pt-2">
+                <!-- 1 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div>
+                            <img class="h-96 object-cover w-full" src="img/lifestyle/1.jpg" alt="">
+                            <div class="relative">
+                                <div class="absolute bottom-0 pl-3 text-xl bg-black text-white opacity-90">
+                                    <a href="#">
+                                        <p class="pb-9 pt-2 font-main">NBA: Нью-Йорк Никс лигийн хамгийн үнэтэй баг</p>
+                                        <p class="text-xs pl-24 pb-3">#Спорт<span> |</span> 2021-02-13 14:32:30</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 2 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div class="pl-2">
+                            <img class="h-96 object-cover w-full" src="img/lifestyle/2.jpg" alt="">
+                            <div class="relative">
+                                <div class="absolute bottom-0 pl-3 text-xl bg-black text-white opacity-90">
+                                    <a href="#">
+                                        <p class="pb-9 pt-2 font-main">Буриадын хамгийн үзэсгэлэнт 5 супер модель</p>
+                                        <p class="text-xs pl-24 pb-3">#Дэлхий<span> |</span> 2021-02-13 15:18:40</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 3 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div class="pl-2">
+                            <img class="h-96 object-cover w-full" src="img/lifestyle/3.jpg" alt="">
+                            <div class="relative">
+                                <div class="absolute bottom-0 pl-3 text-lg bg-black text-white opacity-90">
+                                    <a href="#">
+                                        <p class="pb-9 pt-2 font-main">Бред Питтийн охин аавынхаа нэрнээс татгалзлаа</p>
+                                        <p class="text-xs pl-24 pb-3">#Дэлхий<span> |</span> 2021-02-12 20:33:28</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- 4 -->
+                <div class="w-3/12">
+                    <a href="#">
+                        <div class="pl-2">
+                            <img class="h-96 object-cover w-full" src="img/lifestyle/4.jpg" alt="">
+                            <div class="relative">
+                                <div class="absolute bottom-0 pl-3 text-lg bg-black text-white opacity-90">
+                                    <a href="#">
+                                        <p class="pb-9 pt-2 font-main">52 нас хүрсэн Женнифер Энистоны шилдэг эшлэлүүд</p>
+                                        <p class="text-xs pl-24 pb-3">#Урлаг<span> |</span> 2021-02-11 17:59:48</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="pl-14 pr-14 bg-dark">
+            <div class="pr-6 pl-6 pt-8 pb-8"><hr></div>
+            <div class="text-xs text-white pl-6 pb-1">
+                Сурталчилгаа байршуулах <span class="pl-1 pr-1">|</span> Холбоо барих <span class="pl-1 pr-1">|</span>
+                Бидний тухай<span class="pl-1 pr-1">|</span> Лого татах
+            </div>
+            <div class="text-white pl-6 text-xs pb-9">Copyright &copy; 2010-2021 Zindaa.mn <span class="pl-7">Developed by mCast LLC</span></div>
+        </section>
+    </body>
+</html>
